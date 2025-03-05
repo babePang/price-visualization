@@ -1,0 +1,79 @@
+.search-item {
+  display: flex;
+  align-items: center;
+}
+
+// 遍历margin
+@for $i from 1 through 1000 {
+  .m-#{$i} {
+    margin: $i + px !important;
+  }
+  .m-v-#{$i} {
+    margin: $i + px 0 !important;
+  } // vertical垂直方向
+  .m-h-#{$i} {
+    margin: 0 $i + px !important;
+  }
+  .m-t-#{$i} {
+    margin-top: $i + px !important;
+  }
+  .m-b-#{$i} {
+    margin-bottom: $i + px !important;
+  }
+  .m-l-#{$i} {
+    margin-left: $i + px !important;
+  }
+  .m-r-#{$i} {
+    margin-right: $i + px !important;
+  }
+  .p-#{$i} {
+    padding: $i + px !important;
+  }
+  .p-v-#{$i} {
+    padding: $i + px 0 !important;
+  } // vertical垂直方向
+  .p-h-#{$i} {
+    padding: 0 $i + px !important;
+  }
+  .p-t-#{$i} {
+    padding-top: $i + px !important;
+  }
+  .p-b-#{$i} {
+    padding-bottom: $i + px !important;
+  }
+  .p-l-#{$i} {
+    padding-left: $i + px !important;
+  }
+  .p-r-#{$i} {
+    padding-right: $i + px !important;
+  }
+  .fz-#{$i} {
+    font-size: $i + px !important;
+  }
+}
+
+@for $i from 1 through 1000 {
+  .w-#{$i} {
+    width: $i + px !important;
+  }
+  .h-#{$i} {
+    height: $i + px !important;
+  }
+}
+@for $i from 1 through 100 {
+  .w#{$i} {
+    width: $i * 1% !important;
+  }
+  .h#{$i} {
+    height: $i * 1% !important;
+  }
+}
+
+@for $i from 1 through 1000 {
+  .row-gap-#{$i} {
+    row-gap: $i + px;
+  }
+  .column-gap-#{$i} {
+    column-gap: $i + px;
+  }
+}
